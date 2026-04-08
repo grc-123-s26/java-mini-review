@@ -11,8 +11,8 @@ public class Practice {
      * printed output:
      * welcome
      * to
-     * sdev
-     * 220
+     * cs
+     * 123
      * 
      * @param items an array of strings to print
      */

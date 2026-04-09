@@ -1,6 +1,12 @@
 public class Practice {
 
     /**
+     * 
+     * 
+     * Alexandr Balan
+     * Date: 4/9/26
+     * CS123
+     * 
      * Prints each item from an array on a separate line.
      * 
      * Example:

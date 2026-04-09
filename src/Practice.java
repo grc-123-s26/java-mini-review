@@ -1,6 +1,12 @@
 public class Practice {
 
     /**
+     * 
+     * 
+     * Alexandr Balan
+     * Date: 4/9/26
+     * CS123
+     * 
      * Prints each item from an array on a separate line.
      * 
      * Example:
@@ -18,6 +24,9 @@ public class Practice {
      */
     public static void printItems(String[] items) {
         // TODO: Implement this method here!
+        for(int i = 0; i < items.length; i++) {
+            System.out.println(items[i]);
+        }
     }
 
     /**
@@ -45,7 +54,7 @@ public class Practice {
      */
     public static boolean moreThanDouble(int a, int b) {
         // TODO: Delete the dummy return statement and implement this method here!
-        return false;
+        return a > 2 * b; // return if value a is greater than 2, and twice the size of b.
     }
 
 
@@ -71,7 +80,17 @@ public class Practice {
      */
     public static boolean allStartWithA(String[] words) {
         // TODO: Delete the dummy return statement and implement this method here!
-        return false;
+        for(int i = 0; i < words.length; i++) {
+            String word = words[i];
+
+            String firstLetter = word.substring(0,1);
+
+            if(!firstLetter.equals("A") && !firstLetter.equals("a")) {
+                return false;
+            }
+        }
+
+        return true;
     }
 
     public static void main(String[] args) {

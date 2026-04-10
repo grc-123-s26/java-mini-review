@@ -46,7 +46,7 @@ public class Practice {
      * @return true if a is strictly more than twice the value of b, false otherwise
      */
     public static boolean moreThanDouble(int a, int b) {
-        return (a % b == 0) && (a / b == 2); 
+        return a / b >= 2 && a / b % 2 != 0;
     }
 
 
@@ -103,5 +103,18 @@ public class Practice {
         System.out.println("allStartWithA(new String[]{\"apes\", \"can\", \"be\", \"amazing\"}): " + allStartWithA(new String[]{"apes", "can", "be", "amazing"}));
         System.out.println("allStartWithA(new String[]{}): " + allStartWithA(new String[]{}));
         System.out.println();
+
+        System.out.println("Calling printItems with String[]{{\"Hi\", \"There\\n\", \"maybe\", \"we\", \"if23    asd\"}");
+        printItems(new String[]{"Hi", "There\n", "maybe", "we", "if23    asd"});
+        System.out.println();
+
+        System.out.println("Calling moreThanDouble with values (3,2), (100,10), (60/29)");
+        System.out.println("moreThanDouble(3,2)" + moreThanDouble(3,2));
+        System.out.println("moreThanDouble(100,10)" + moreThanDouble(100,10));
+        System.out.println("moreThanDouble(60,29)" + moreThanDouble(60,29));
+        System.out.println(); 
+
+        System.out.println(); 
+        System.out.println("allStartsWithA(new String[]{\" a\", \"almost\", \"anything\", \"\\nanyways\"});" + allStartWithA(new String[]{" a", "almost", "anything", "\nanyways"}));
     }
 }

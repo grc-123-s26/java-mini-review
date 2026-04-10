@@ -17,7 +17,7 @@ public class Practice {
      * @param items an array of strings to print
      */
     public static void printItems(String[] items) {
-        for (String item : items){
+        for (String item : items) {
             System.out.println(item);
         }
     }
@@ -72,9 +72,9 @@ public class Practice {
      * @return true if every word starts with A (case-insensitive), false otherwise.
      */
     public static boolean allStartWithA(String[] words) {
-        for (String word : words){
+        for (String word : words) {
             word = word.toLowerCase();
-            if (!word.startsWith("a")){
+            if (!word.startsWith("a")) {
                 return false;
             }
         }

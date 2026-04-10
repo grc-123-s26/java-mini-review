@@ -17,7 +17,9 @@ public class Practice {
      * @param items an array of strings to print
      */
     public static void printItems(String[] items) {
-        // TODO: Implement this method here!
+        for (String item : items) {
+            System.out.println(item); 
+        }
     }
 
     /**
@@ -44,8 +46,11 @@ public class Practice {
      * @return true if a is strictly more than twice the value of b, false otherwise
      */
     public static boolean moreThanDouble(int a, int b) {
-        // TODO: Delete the dummy return statement and implement this method here!
-        return false;
+        if (b == 0) {
+            System.out.println(" --Undefined--  ");
+            return false;
+        }
+        return (double) a / b > 2;
     }
 
 
@@ -70,8 +75,15 @@ public class Practice {
      * @return true if every word starts with A (case-insensitive), false otherwise.
      */
     public static boolean allStartWithA(String[] words) {
-        // TODO: Delete the dummy return statement and implement this method here!
-        return false;
+        for (String word : words)
+        {
+            word = word.strip().toLowerCase();
+            if (!word.startsWith("a")) {
+                return false; 
+            }
+        }
+
+        return true; 
     }
 
     public static void main(String[] args) {
@@ -95,5 +107,21 @@ public class Practice {
         System.out.println("allStartWithA(new String[]{\"apes\", \"can\", \"be\", \"amazing\"}): " + allStartWithA(new String[]{"apes", "can", "be", "amazing"}));
         System.out.println("allStartWithA(new String[]{}): " + allStartWithA(new String[]{}));
         System.out.println();
+
+        System.out.println("Calling printItems with String[]{{\"Hi\", \"There\\n\", \"maybe\", \"we\", \"if23    asd\"}");
+        printItems(new String[]{"Hi", "There\n", "maybe", "we", "if23    asd"});
+        System.out.println();
+
+        System.out.println("Calling moreThanDouble with values (3,2), (100,10), (60,29), (1,0), (0,1)");
+        System.out.println("moreThanDouble(3,2): " + moreThanDouble(3,2));
+        System.out.println("moreThanDouble(100,10): " + moreThanDouble(100,10));
+        System.out.println("moreThanDouble(60,29): " + moreThanDouble(60,29));
+        System.out.println("moreThanDouble(0,1): " + moreThanDouble(0,1));
+        System.out.println();
+        System.out.println("moreThanDouble(1,0): " + moreThanDouble(1,0));
+        System.out.println(); 
+
+        System.out.println(); 
+        System.out.println("allStartsWithA(new String[]{\" a\", \"almost\", \"anything\", \"\\nanyways\"}): " + allStartWithA(new String[]{" a", "almost", "anything", "\nanyways"}));
     }
 }

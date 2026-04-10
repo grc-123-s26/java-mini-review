@@ -73,7 +73,7 @@ public class Practice {
     public static boolean allStartWithA(String[] words) {
         for (String word : words)
         {
-            word = word.toLowerCase()
+            word = word.toLowerCase();
             if (!word.startsWith("a")) {
                 return false; 
             }

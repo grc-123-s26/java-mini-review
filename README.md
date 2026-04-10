@@ -46,7 +46,7 @@ allStartWithA(new String[]{}): true
 
 ```
 
-Note that getting the correct output does NOT guarantee that your code is fully working. It is your resposibility to work on your code to make sure it works for all cases, not just the sample test cases provided.
+Note that getting the correct output does NOT guarantee that your code is fully working. It is your responsibility to work on your code to make sure it works for all cases, not just the sample test cases provided.
 
 ## Submitting
 Make a pull request (PR) against the original repository and submit the URL to your PR on Canvas.

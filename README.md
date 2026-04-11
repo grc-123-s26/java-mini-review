@@ -30,6 +30,13 @@ public static void main(String[] args) {
     System.out.println("Calling printItems(new String[]{\"hello\", \"world\"})");
     printItem(new String[]{"hello", "world"});
     System.out.println();
+
+    System.out.println("///// More than Double /////");
+    System.out.println("moreThanDouble(10, 3): " + moreThanDouble(10, 3));
+    System.out.println("moreThanDouble(6, 4): " + moreThanDouble(6, 4));
+    System.out.println("moreThanDouble(4, 2): " + moreThanDouble(4, 2));
+    System.out.println();
+
 }
 
 ///// Print items /////

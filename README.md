@@ -37,6 +37,10 @@ public static void main(String[] args) {
     System.out.println("moreThanDouble(4, 2): " + moreThanDouble(4, 2));
     System.out.println();
 
+    System.out.println("///// All Start With A /////");
+    System.out.println(allStartWithA(new String[]{"alligators", "are", "AWESOME"}));
+    System.out.println(allStartWithA(new String[]{"apes", "can", "be", "amazing"}));
+    System.out.println(allStartWithA(new String[]{}));
 }
 
 ///// Print items /////

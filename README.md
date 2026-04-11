@@ -21,6 +21,16 @@ This will compile your code and run the main method of the Practice class. Befor
 
 ```
 
+public static void main(String[] args) {
+    System.out.println("///// Print items /////");
+    System.out.println("Calling printItems(new String[]{"welcome", "to", "cs", "123"})");
+    printItem(new String[]{"welcome", "to", "cs", "123"});
+    System.out.println();
+
+    System.out.println("Calling printItems(new String[]{\"hello\", \"world\"})");
+    printItem(new String[]{"hello", "world"});
+    System.out.println();
+}
 
 ///// Print items /////
 Calling printItems(new String[]{"welcome", "to", "cs", "123"})

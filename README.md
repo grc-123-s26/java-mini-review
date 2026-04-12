@@ -59,6 +59,18 @@ public static boolean moreThanDouble(int x, int y) {
     }
 }
 
+// Returns true if all strings start with A or a
+public static boolean allStartWithA(String[] words) {
+    for (int i = 0; i < words.length; i++) {
+        String word = words[i];
+
+        if (!word.startsWith("a") && !word.startsWith("A")) {
+            return false;
+        }
+    }
+    return true;
+}
+
 
 ///// Print items /////
 Calling printItems(new String[]{"welcome", "to", "cs", "123"})

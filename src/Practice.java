@@ -74,6 +74,11 @@ public class Practice {
      */
     public static boolean allStartWithA(String[] words) {
         // TODO: Delete the dummy return statement and implement this method here!
+        for(int i = 0; i < words.length; i++) {
+            if(words[i].charAt(0) != 'A' && words[i].charAt(0) != 'a') {
+                return false;
+            }
+        }
         return false;
     }
 

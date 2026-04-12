@@ -20,7 +20,7 @@ javac src/Practice.java && java -cp src Practice
 This will compile your code and run the main method of the Practice class. Before you implement your solutions, the output will be INCORRECT (it will not print the messages on new lines and it will show false for everything). When you finish your solutions, the output should look like this:
 
 ```
-
+//
 public static void main(String[] args) {
     System.out.println("///// Print items /////");
     System.out.println("Calling printItems(new String[]{"welcome", "to", "cs", "123"})");
@@ -47,6 +47,15 @@ public static void main(String[] args) {
 public static void printItems(String[] items) {
     for (int i = 0; i < items.length; i++) {
         System.out.println(items[i]);
+    }
+}
+
+// Returns true if x is two times more than y
+public static boolean moreThanDouble(int x, int y) {
+    if (x > 2 * y) {
+        return true;
+    } else {
+        return false;
     }
 }
 

@@ -43,6 +43,14 @@ public static void main(String[] args) {
     System.out.println(allStartWithA(new String[]{}));
 }
 
+// Each item in the array prints on its own line
+public static void printItems(String[] items) {
+    for (int i = 0; i < items.length; i++) {
+        System.out.println(items[i]);
+    }
+}
+
+
 ///// Print items /////
 Calling printItems(new String[]{"welcome", "to", "cs", "123"})
 welcome

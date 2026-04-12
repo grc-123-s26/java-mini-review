@@ -78,8 +78,22 @@ public class Practice {
      * @return true if every word starts with A (case-insensitive), false otherwise.
      */
     public static boolean allStartWithA(String[] words) {
-        // TODO: Delete the dummy return statement and implement this method here!
-        return false;
+        int L = words.length;
+        boolean tf = true;
+
+        for(int i = 0; i < L;i++ ){
+            String x = words[i];
+            
+            char c = x.charAt(0); 
+            char a = 'a'; 
+            if(c==a){
+                tf = true;
+            }
+            else{
+                return false;
+            }
+        }
+        return true;
     }
 
     public static void main(String[] args) {

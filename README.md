@@ -20,6 +20,56 @@ javac src/Practice.java && java -cp src Practice
 This will compile your code and run the main method of the Practice class. Before you implement your solutions, the output will be INCORRECT (it will not print the messages on new lines and it will show false for everything). When you finish your solutions, the output should look like this:
 
 ```
+//
+public static void main(String[] args) {
+    System.out.println("///// Print items /////");
+    System.out.println("Calling printItems(new String[]{"welcome", "to", "cs", "123"})");
+    printItem(new String[]{"welcome", "to", "cs", "123"});
+    System.out.println();
+
+    System.out.println("Calling printItems(new String[]{\"hello\", \"world\"})");
+    printItem(new String[]{"hello", "world"});
+    System.out.println();
+
+    System.out.println("///// More than Double /////");
+    System.out.println("moreThanDouble(10, 3): " + moreThanDouble(10, 3));
+    System.out.println("moreThanDouble(6, 4): " + moreThanDouble(6, 4));
+    System.out.println("moreThanDouble(4, 2): " + moreThanDouble(4, 2));
+    System.out.println();
+
+    System.out.println("///// All Start With A /////");
+    System.out.println(allStartWithA(new String[]{"alligators", "are", "AWESOME"}));
+    System.out.println(allStartWithA(new String[]{"apes", "can", "be", "amazing"}));
+    System.out.println(allStartWithA(new String[]{}));
+}
+
+// Each item in the array prints on its own line
+public static void printItems(String[] items) {
+    for (int i = 0; i < items.length; i++) {
+        System.out.println(items[i]);
+    }
+}
+
+// Returns true if x is two times more than y
+public static boolean moreThanDouble(int x, int y) {
+    if (x > 2 * y) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+// Returns true if all strings start with A or a
+public static boolean allStartWithA(String[] words) {
+    for (int i = 0; i < words.length; i++) {
+        String word = words[i];
+
+        if (!word.startsWith("a") && !word.startsWith("A")) {
+            return false;
+        }
+    }
+    return true;
+}
 
 
 ///// Print items /////

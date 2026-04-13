@@ -44,7 +44,7 @@ public class Practice {
      * @return true if a is strictly more than twice the value of b, false otherwise
      */
     public static boolean moreThanDouble(int a, int b) {
-        // TODO: Delete the dummy return statement and implement this method here!
+        if(a > (b*2)){return true;}
         return false;
     }
 

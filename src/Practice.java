@@ -47,7 +47,7 @@ public class Practice {
      */
     public static boolean moreThanDouble(int a, int b) {
         // TODO: Delete the dummy return statement and implement this method here!
-        if(a/2<b){
+        if(a/2>b){
             return true;
         }
         return false;
@@ -80,7 +80,7 @@ public class Practice {
             if(words[i]==null){
                 return true;
             }
-            else if(words[i].charAt(1) == 'a' || words[i].charAt(1) == 'A'){
+            else if(words[i].charAt(0) == 'a' || words[i].charAt(1) == 'A'){
                 continue;
             }
             else{

@@ -48,7 +48,10 @@ public class Practice {
      */
     public static boolean moreThanDouble(int a, int b) {
         int c = a/2; 
-        if(c==b){
+        if(c>b){
+            return true;
+        }
+        else if(c==b){
             return true;
         }
         else{

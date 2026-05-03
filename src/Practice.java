@@ -19,7 +19,7 @@ public class Practice {
     public static void printItems(String[] items) {
         // TODO: Implement this method here!
 
-        for (int i = 0; i < items.llength; i++){
+        for (int i = 0; i < items.length; i++){
             System.out.println(items[i]);
         }
     }
@@ -51,7 +51,7 @@ public class Practice {
         // TODO: Delete the dummy return st  atement and implement this method here!
         if ( a > b *2){
             if {
-                return true; 
+                return a > b * 2;
             }
             else {
                 return false;
@@ -86,10 +86,10 @@ public class Practice {
         // TODO: Delete the dummy return statement and implement this method here!
         // return false;
 
-        for (int i = 0; i > words.length; i++){
+        for (int i = 0; i  < words.length; i++){
             char firstLetter = words[i].charAt(0);
 
-            if (firstLetter != 'A' && firstletter != 'a'){
+            if (firstLetter != 'A' && firstLetter != 'a'){
                 return false;
             }
         }

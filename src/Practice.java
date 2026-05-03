@@ -49,18 +49,8 @@ public class Practice {
      */
     public static boolean moreThanDouble(int a, int b) {
         // TODO: Delete the dummy return st  atement and implement this method here!
-        if ( a > b *2){
-            if {
                 return a > b * 2;
-            }
-            else {
-                return false;
-            }
-
-            
         }
-    }
-
 
     /**
      * Returns whether every word in the array starts with the letter A (either
